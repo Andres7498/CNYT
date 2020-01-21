@@ -10,7 +10,7 @@ def rescom(x,y):
     return(q,e)
 def multicom(x,y):
     q=float(x[0])*float(y[0])
-    e=float(x[0])*float(y[1])+(float(x[1])*float(y[0]))
+    e=(float(x[0])*float(y[1]))+((float(x[1])*float(y[0])))
     i=(float(x[1])*float(y[1])*-1)
     q=q+i
     return(q,e)
@@ -36,4 +36,30 @@ def cartcom(x):
     x=q*math.cos(ang1)
     y=q*math.sin(ang1)
     return(x,y)
-
+def adicivectocom(x,y):
+    lista=[]
+    if len(x)== len(y):
+        for i in range(len(x)):
+            tup=x[i]
+            tup2=y[i]
+            z=sumacom(tup,tup2)
+            lista.append(z)
+        return lista
+    else:
+        return "No son de la misma dimension"
+def invervectocom(x):
+    lista=[]
+    for i in range(len(x)):
+        a=x[i]
+        d=float(a[0])*-1
+        f=float(a[1])*-1
+        z=(d,f)
+        lista.append(z)
+    return lista
+def multivectocom(x,a):
+    lista=[]
+    for i in range(len(x)):
+        tup=x[i]
+        z=multicom(tup,a)
+        lista.append(z)
+    return lista
