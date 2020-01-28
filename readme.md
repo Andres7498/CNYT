@@ -23,7 +23,7 @@ del usuario
 ---------------------------------------PORQUE LOS TEST------------------------------------------
 Los test se ejecutan para mirar y comprobar con un resultado veridico que las respuestas que
 dan la funciones de la libreria si se encuentran bien desarrolladas y programadas
------------------------------------------VERSION 0.1--------------------------------------------
+-----------------------------------------VERSION 0.1.4--------------------------------------------
 La version actual de la libreria es la 0.1 ya que se encuentra en fase de desarrollo y no se ha 
 terminado su primera version final
 --------------------------------------------AUTOR-----------------------------------------------
