@@ -36,6 +36,11 @@ def cartcom(x):
     x=q*math.cos(ang1)
     y=q*math.sin(ang1)
     return(x,y)
+def fasecom(x):
+    arri=x[1]
+    abaj=x[0]
+    d=((math.atan2(arri,abaj)*180)/math.pi)
+    return round(d,2)
 def adicivectocom(x,y):
     lista=[]
     if len(x)== len(y):
