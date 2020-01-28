@@ -39,7 +39,7 @@ def cartcom(x):
 def fasecom(x):
     arri=x[1]
     abaj=x[0]
-    d=((math.atan2(arri,abaj)*180)/math.pi)
+    d=(math.atan2(arri,abaj))
     return round(d,2)
 def adicivectocom(x,y):
     lista=[]

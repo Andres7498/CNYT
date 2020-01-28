@@ -32,7 +32,7 @@ class Testing(unittest.TestCase):
         self.assertEqual(Calculadoracomplejos.cartcom(a),(8,-2.0))
     def testfasecom(self):
         a = (3,-5)
-        self.assertEqual(Calculadoracomplejos.fasecom(a),(-59.04))
+        self.assertEqual(Calculadoracomplejos.fasecom(a),(-1.03))
     def testadicivectocom(self):
         a =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
         b=[(-56,86),(4,-9.6),(2.961,-9.1),(1,2)]
