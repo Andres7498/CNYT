@@ -68,22 +68,18 @@ def multivectocom(x,a):
         z=multicom(tup,a)
         lista.append(z)
     return lista
-def productotensor(x,y):
-    x=[[(1),(3)],[(5),(2)]]
-y=[[(1),(-1)],[(-2),(2)]]
-final=[]
-fina2=[]
-for i in range(len(x[0])):
-    for j in range(len(x)):
-        num=(x[i][j])
-        print(str(num)+("ñ"))
-        final=[]
-        for k in range(len(y[0])):
-            for l in range(len(y)):
-                print(y[k][l])
-                num2=num*(y[k][l])
-            final.append(num2)
-        fina2.append(final)
-            
+def tensorcom(x,y):
+    final=[]
+    for i in range(len(x[0])):
+        for j in range(len(x)):
+            fina2=[]
+            for k in range(len(y[0])):
+                for l in range(len(y)):
+                    q=float((x[i][k])[0])*float((y[j][l])[0])
+                    e=(float((x[i][k])[0])*float((y[j][l])[1]))+((float((x[i][k])[1])*float((y[j][l])[0])))
+                    i=(float((x[i][k])[1])*float((y[j][l])[1])*-1)
+                    q=q+i
+                    fina2.append(q)
+            final.append(fina2)
+    print(final)
 
-print(fina2)

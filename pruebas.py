@@ -44,7 +44,11 @@ class Testing(unittest.TestCase):
         a =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
         b =(-1,2)
         self.assertEqual(Calculadoracomplejos.multivectocom(a,b),[(11.0,13.0),(5.2,7.6),(-2.099,13.698),(-5.0,0)])
-        
+    def testmultivectocom(self):
+        a =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
+        b =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
+        self.assertEqual(Calculadoracomplejos.tensorcom(a,b),[(11.0,13.0),(5.2,7.6),(-2.099,13.698),(-5.0,0)])
+       
         
 if __name__ == '__main__':
     unittest.main()
