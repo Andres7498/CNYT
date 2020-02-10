@@ -25,8 +25,7 @@ class Testing(unittest.TestCase):
         self.assertEqual(Calculadoracomplejos.divcom(a,b),(13.92,16.96))
     def testcon(self):
         a = (-4.56,5)
-        b = (8,-78.654)
-        self.assertEqual(Calculadoracomplejos.concom(a,b),((-4.56,-5.0),(8.0,78.654)))
+        self.assertEqual(Calculadoracomplejos.concom(a),(-4.56,-5.0))
     def testcart(self):
         a = (8,-2)
         self.assertEqual(Calculadoracomplejos.cartcom(a),(8,-2.0))
@@ -61,13 +60,23 @@ class Testing(unittest.TestCase):
     def testtransmatvec(self):
         a =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
         self.assertEqual(Calculadoracomplejos.transmatvec(a),[[(6, -7), (5.899, -1.9), (6.7, 8)],[(2, -3.6), (1, 2), (-1, 6.9)],[(2.5, 7), (7.8, -4), (3.2, -2.3)]])
-        
+    def testconjumatveccom(self):
+        a =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
+        self.assertEqual(Calculadoracomplejos.conjumatveccom(a),[[(6, 7), (5.899, 1.9), (6.7, -8)],[(2, 3.6), (1, -2), (-1, -6.9)],[(2.5, -7), (7.8, 4), (3.2, 2.3)]])
+    def testadjunmatveccom(self):
+        a =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
+        self.assertEqual(Calculadoracomplejos.adjunmatveccom(a),[[(6.0, 7.0), (5.899, 1.9), (6.7, -8.0)],[(2.0, 3.6), (1.0, -2.0), (-1.0, -6.9)],[(2.5, -7), (7.8, 4), (3.2, 2.3)]])
+    def testproducmatcom(self):
+        a =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
+        b =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
+        self.assertEqual(Calculadoracomplejos.producmatcom(a,b),[0])
 
 ##    def testmultivectocom(self):
 ##        a =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
 ##        b =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
 ##        self.assertEqual(Calculadoracomplejos.tensorcom(a,b),[(11.0,13.0),(5.2,7.6),(-2.099,13.698),(-5.0,0)])
        
+
         
 if __name__ == '__main__':
     unittest.main()

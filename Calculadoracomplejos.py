@@ -9,10 +9,8 @@ def rescom(x,y):
     e=float(x[1])-float(y[1])
     return(q,e)
 def multicom(x,y):
-    q=float(x[0])*float(y[0])
+    q=float(x[0])*float(y[0])+(float(x[1])*float(y[1])*-1)
     e=(float(x[0])*float(y[1]))+((float(x[1])*float(y[0])))
-    i=(float(x[1])*float(y[1])*-1)
-    q=q+i
     return(q,e)
 def modcom(x,y):
     q=((float(x[0])**2)+(float(x[1])**2))**0.5
@@ -26,10 +24,9 @@ def divcom(x,y):
     q=(((a1*a2)+(b1*b2))/(a2**2)+(b2**2))
     e=(((a2*b1)-(a1*b2))/(a2**2)+(b2**2))
     return(q,e)
-def concom(x,y):
+def concom(x):
     q=float(x[0]),(float(x[1])*-1)
-    e=float(y[0]),(float(y[1])*-1)
-    return(q,e)
+    return(q)
 def cartcom(x):
     q=((float(x[0])**2)+(float(x[1])**2))**0.5
     ang1=math.atan(float(x[1])/float(x[0]))
@@ -105,17 +102,52 @@ def escamatcom(x,y):
     return(final)
 def transmatvec(x):
     final=[]
-    for i in range(len(x)):
+    for i in range(len(x[0])):
         fila=[]
-        for j in range(len(x[0])):
+        for j in range(len(x)):
             a=(((x[j][i])[0]))
             b=(((x[j][i])[1]))
             c=(a,b)
             fila.append(c)
         final.append(fila)
     return(final)
-def conjumatveccom():
-    
+def conjumatveccom(x):
+    final=[]
+    for i in range(len(x)):
+        fila=[]
+        for j in range(len(x[0])):
+            a=(x[j][i])
+            c=concom(a)
+            fila.append(c)
+        final.append(fila)
+    return(final)
+def adjunmatveccom(x):
+    final=[]
+    for i in range(len(x[0])):
+        fila=[]
+        for j in range(len(x)):
+            a=(((x[j][i])[0]))
+            b=(((x[j][i])[1]))
+            c=(a,b)
+            d=concom(c)
+            fila.append(d)
+        final.append(fila)
+    return(final)
+def producmatcom(x,y):
+    try:
+        final=[]
+        for i in range(len(x[0])):
+            fila=[]
+            for j in range(len(x)):
+                suma=(0,0)
+                for k in range(len(x[i])):
+                    oper=multicom(x[i][k],y[k][j])
+                    suma=sumar(temp, oper)
+                fila.append(suma)
+            final.append(fila)
+        return final
+    except:
+        return 'No es posible hacer el prudcto de matrices, revisa las dimensiones.'
 ##def tensorcom(x,y):
 ##    final=[]
 ##    for i in range(len(x[0])):
