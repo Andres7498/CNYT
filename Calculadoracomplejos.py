@@ -137,8 +137,8 @@ def producmatcom(x,y):
     try:
         final=[]
         for i in range(len(x[0])):
-            fila=[]
-            for j in range(len(x)):
+             fila=[]
+             for j in range(len(x)):
                 suma=(0,0)
                 for k in range(len(x[i])):
                     oper=multicom(x[i][k],y[k][j])
