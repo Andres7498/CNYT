@@ -9,7 +9,7 @@ def rescom(x,y):
     e=float(x[1])-float(y[1])
     return(q,e)
 def multicom(x,y):
-    q=float(x[0])*float(y[0])+(float(x[1])*float(y[1])*-1)
+    q=(float(x[0])*float(y[0])+(float(x[1])*float(y[1])*-1))
     e=(float(x[0])*float(y[1]))+((float(x[1])*float(y[0])))
     return(q,e)
 def modcom(x,y):
@@ -135,20 +135,58 @@ def adjunmatveccom(x):
     return(final)
 def producmatcom(x,y):
     try:
-        final=[]
-        for i in range(len(x[0])):
-             fila=[]
-             for j in range(len(x)):
-                suma=(0,0)
-                for k in range(len(x[i])):
-                    oper=multicom(x[i][k],y[k][j])
-                    suma=sumar(temp, oper)
-                fila.append(suma)
-            final.append(fila)
-        return final
+        res = [[[0,0] for j in range(len(y[0]))] for i in range(len(x))]
+        for i in range(len(x)):
+            for j in range(len(y[0])):
+                for k in range(len(y)):
+                    res[i][j] = sumacom(res[i][j], multicom(x[i][k], y[k][j]))
+        return res
     except:
-        return 'No es posible hacer el prudcto de matrices, revisa las dimensiones.'
-##def tensorcom(x,y):
+        return 'Malas dimensiones de matrices'
+##def accimatveccom(x,y):
+##    res = [[0,0] for j in range(len(y))]
+##    print(res)
+##    print (y)
+##    for i in range(len(x)):
+##        for j in range(len(y)):
+##            for k in range(len(y)):
+##                res[i] = sumacom(res[i], multicom(y[i][k], x[k]))
+##
+##    return res
+##def prodintvec(x,y):
+##    compa=adjunmatveccom(x)
+##    res=(0,0)
+##    for i in range(len(x)):
+##        for j in range(len(x)-2):
+##            res=sumacom(multicom(compa[i][j],y[i][j]),res)
+##    return res
+
+def matcomuni(x):
+    res = []
+    for i in range(len(x)):
+        fila = []
+        for k in range(len(x)):
+            if i == k:
+                fila = fila + [[1,0]]
+            else:
+                fila = fila + [[0,0]]
+        res = res + [fila]
+    if producmatcom(x,adjunmatveccom(x))  == res:
+        return True
+    else:
+        return False
+def mathermi(x):
+    if x==adjunmatveccom(x):
+        return True
+    else:
+        return False
+
+
+
+
+
+
+##def tensorcom(x,y):   
 ##    final=[]
 ##    for i in range(len(x[0])):
 ##        for j in range(len(x)):

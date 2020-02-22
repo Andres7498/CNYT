@@ -1,4 +1,5 @@
 
+
 import unittest
 import Calculadoracomplejos
 
@@ -69,12 +70,14 @@ class Testing(unittest.TestCase):
     def testproducmatcom(self):
         a =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
         b =[[(6,-7),(2,-3.6),(2.5,7)],[(5.899,-1.9),(1,2),(7.8,-4)],[(6.7,8),(-1,6.9),(3.2,-2.3)]]
-        self.assertEqual(Calculadoracomplejos.producmatcom(a,b),[0])
+        self.assertEqual(Calculadoracomplejos.producmatcom(a,b),[[(-47.292, -42.136399999999995),(-54.800000000000004, -24.950000000000003),(89.3, 5.070000000000004)],[(116.053, -7.195000000000007),(21.758000000000003, 36.7836),(59.6075, 17.403000000000002)],[(143.251, 53.893100000000004),(40.07, 21.160000000000004),(-14.499999999999996, 110.0)]])
+    def testmatcomuni(self):
+        a =[[(6,-7),(2,-3.6)],[(5.899,-1.9),(1,2)],[(6.7,8),(-1,6.9)]]
+        self.assertEqual(Calculadoracomplejos.matcomuni(a),0)
+    def testmathermi(self):
+        a =[[(6,-7),(2,-3.6)],[(5.899,-1.9),(1,2)],[(6.7,8),(-1,6.9)]]
+        self.assertEqual(Calculadoracomplejos.mathermi(a),0)
 
-##    def testmultivectocom(self):
-##        a =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
-##        b =[(3,-7),(2,-3.6),(5.899,-1.9),(1,2)]
-##        self.assertEqual(Calculadoracomplejos.tensorcom(a,b),[(11.0,13.0),(5.2,7.6),(-2.099,13.698),(-5.0,0)])
        
 
         
