@@ -1,5 +1,7 @@
-#Sebastian Nieto / Andres Martinez 
-					##Experimento de la doble rendija 
+# Sebastian Nieto / Andres Martinez.
+
+## Experimento de la doble rendija.
+
 El experimento de Young más conocido como "experimento de la doble rejilla" 
 trata de demostrar el comportamiento de la luz para, para esto el experimento 
 se basa en un láser de electrones el cual debe disparar varios electrones 
