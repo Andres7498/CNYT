@@ -8,4 +8,4 @@ estar lo más cercanas posibles, cuando traspasan la rendija el electrón
 impacta directamente en otra superficie, al dejar en funcionamiento el 
 experimento por un tiempo aproximado de unos 30 minutos, se comienza a ver 
 un patrón de comportamiento en los impactos de los electrones.
-![](Imagenes/1.JPEG)
+![.](https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/1.jpeg)
