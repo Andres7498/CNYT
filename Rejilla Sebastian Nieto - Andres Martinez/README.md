@@ -8,6 +8,7 @@ estar lo más cercanas posibles, cuando traspasan la rendija el electrón
 impacta directamente en otra superficie, al dejar en funcionamiento el 
 experimento por un tiempo aproximado de unos 30 minutos, se comienza a ver 
 un patrón de comportamiento en los impactos de los electrones.
+![Foto de ilustracion del comportamiento de los electrones](https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/1.jpeg)
 
 En la recreación del experimento por nuestra parte, utilizamos cartón paja
 aluminio, un láser básico; para demostrar que esta propiedad que tiene la 
@@ -24,4 +25,3 @@ de la dualidad onda-partícula, al tratar de saber por qué rendija paso el
 electrón y tratar de estimular porque impacto en esa zona, es imposible saber
 ya que el pasar por la rejilla se fragmenta, y no se puede saber por que
 rendija paso el electrón y la razón de su zona de impacto.
-
