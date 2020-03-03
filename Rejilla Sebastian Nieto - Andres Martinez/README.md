@@ -1,5 +1,5 @@
-Sebastian Nieto / Andres Martinez 
-
+#Sebastian Nieto / Andres Martinez 
+					##Experimento de la doble rendija 
 El experimento de Young más conocido como "experimento de la doble rejilla" 
 trata de demostrar el comportamiento de la luz para, para esto el experimento 
 se basa en un láser de electrones el cual debe disparar varios electrones 
@@ -19,6 +19,7 @@ los electrones también tenían ese mismo patrón de comportamiento al impactar
 sobre una superficie, demostrando que en los impactos siguen siendo electrones,
 aunque se vea como ondas debido a la cantidad de electrones impactados en una
 superficie.
+![Foto del experimento recreado por nosotros](https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/3.jpeg)
 
 Todo esto que se evidencio anteriormente tiene que ver con la parte cuántica 
 de la dualidad onda-partícula, al tratar de saber por qué rendija paso el 
