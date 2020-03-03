@@ -8,4 +8,20 @@ estar lo más cercanas posibles, cuando traspasan la rendija el electrón
 impacta directamente en otra superficie, al dejar en funcionamiento el 
 experimento por un tiempo aproximado de unos 30 minutos, se comienza a ver 
 un patrón de comportamiento en los impactos de los electrones.
-![.](https://raw.githubusercontent.com/Andres7498/CNYT/master/Rejilla Sebastian Nieto - Andres Martinez/Imagenes/1.jpeg)
+
+En la recreación del experimento por nuestra parte, utilizamos cartón paja
+aluminio, un láser básico; para demostrar que esta propiedad que tiene la 
+luz también se puede demostrar sin necesidad de equipos costosos, se 
+obtuvieron los resultados esperados, así como en el experimento de Young,
+(en las fotos que se subieron en la carpeta imágenes) se pudo evidenciar que
+los electrones también tenían ese mismo patrón de comportamiento al impactar
+sobre una superficie, demostrando que en los impactos siguen siendo electrones,
+aunque se vea como ondas debido a la cantidad de electrones impactados en una
+superficie.
+
+Todo esto que se evidencio anteriormente tiene que ver con la parte cuántica 
+de la dualidad onda-partícula, al tratar de saber por qué rendija paso el 
+electrón y tratar de estimular porque impacto en esa zona, es imposible saber
+ya que el pasar por la rejilla se fragmenta, y no se puede saber por que
+rendija paso el electrón y la razón de su zona de impacto.
+
