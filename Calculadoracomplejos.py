@@ -12,10 +12,9 @@ def multicom(x,y):
     q=(float(x[0])*float(y[0])+(float(x[1])*float(y[1])*-1))
     e=(float(x[0])*float(y[1]))+((float(x[1])*float(y[0])))
     return(q,e)
-def modcom(x,y):
+def modcom(x):
     q=((float(x[0])**2)+(float(x[1])**2))**0.5
-    e=((float(y[0])**2)+(float(y[1])**2))**0.5
-    return(q,e)
+    return(q)
 def divcom(x,y):
     a1=float(x[0])
     a2=float(x[1])
@@ -200,4 +199,12 @@ def mathermi(x):
 ##                    fina2.append(q)
 ##            final.append(fina2)
 ##    print(final)
+###SISTEMA CUANTICO DE PARTICULA EN UNA LINEA ###
 
+    
+def prob_parti(x,y):
+    total=0
+    for i in range(len(x)):
+        total=total+modcom(x[i])
+    y=modcom(x[y])
+    return (total,y)

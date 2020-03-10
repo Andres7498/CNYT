@@ -18,8 +18,7 @@ class Testing(unittest.TestCase):
         self.assertEqual(Calculadoracomplejos.multicom(a,b),(26.0,7.0))
     def testmod(self):
         a = (5,-9)
-        b = (6.32,5.2)
-        self.assertEqual(Calculadoracomplejos.modcom(a,b),(10.295630140987,8.184277610149842))
+        self.assertEqual(Calculadoracomplejos.modcom(a),(10.295630140987))
     def testdiv(self):
         a = (-4,5)
         b = (8,-2)
@@ -77,9 +76,13 @@ class Testing(unittest.TestCase):
     def testmathermi(self):
         a =[[(6,-7),(2,-3.6)],[(5.899,-1.9),(1,2)],[(6.7,8),(-1,6.9)]]
         self.assertEqual(Calculadoracomplejos.mathermi(a),0)
+        
+###SISTEMA CUANTICO DE PARTICULA EN UNA LINEA ###
 
-       
-
+    def testprob_parti(self):
+        a=[(2,1),(-1,2),(0,1),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]
+        b=8
+        self.assertEqual(Calculadoracomplejos.prob_parti(a,b),(0,8.0))
         
 if __name__ == '__main__':
     unittest.main()
