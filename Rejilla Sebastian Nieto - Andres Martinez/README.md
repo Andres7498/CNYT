@@ -32,7 +32,8 @@ rendija paso el electrón y la razón de su zona de impacto.
 
 Como se indico anteriormente el experimento de la doble rendija tiene un trasfondo matematico 
 el cual se genero a partir de un codigo en el lenguaje de programacion python, por medio de calculos con numeros complejos, podemos hacer los click de los fotones y, con uso de del modulo al cuadrado de los elementos de la matriz podemos obtener los datos de una simulacion probabilistica, por esta razon podemos calcular la probabilidad de donde impactarian los fotonos luego de que pasen por la rendija.
->- Para la simulacion usaremos el siguiente vector de probabilidad luego de que el foton pase por una rendija hacia un objetivo como se vera en la siguiente imagen nos devolvera la matriz luego de haber echo dos clicks y el vector de probabilidad ![](https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/3.jpeg)
+>- Para la simulacion usaremos el siguiente vector de probabilidad luego de que el foton pase por una rendija hacia un objetivo como se vera en la siguiente imagen nos devolvera la matriz luego de haber echo dos clicks y el vector de probabilidad
+!(https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/3.jpeg)
 >- Luego podremos ver por medio de una grafica que se genera automaticamente como quedaria las probabilidades.
-![}(https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/4.jpeg)
+!(https://github.com/Andres7498/CNYT/blob/master/Rejilla%20Sebastian%20Nieto%20-%20Andres%20Martinez/Imagenes/4.jpeg)
 
